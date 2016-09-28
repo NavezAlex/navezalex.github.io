@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Portfolio</title>
+		<meta name="vieuwport" content="initial-scale=1.0, width=device-width">
+	</head>
+		<style type="text/css">
+			body{
+				width: 100%;
+				background-color: #FFF;
+				background-position: center;
+				margin: 0;
+				text-align: center;
+			}
+			
+			
+			ul{
+				-webkit-padding-start: 0px;
+				-webkit-margin-before: 0px;
+				-webkit-margin-after: 0px;
+			}
+			header{
+				height: 300px;
+				margin: 0;	
+			}
+			#logo{
+				position: absolute;
+				top: 20px;
+				left: 0;
+			}
+			#logo img{
+				width: 30%;
+			}
+			.container {
+				max-width: 1000px;
+				margin: auto;
+				position: relative;
+			}
+			nav{
+				width: 100%;
+				height: 40px;
+				position: absolute;
+				top: 300px;
+				left: 0;
+			}
+			ul.navig{
+				text-decoration: none;
+				list-style-type: none;
+				color: #03a9d1;
+				font-size: 1.2em;
+				margin: 0;
+			}
+			ul.navig li{
+				display: inline-block;
+				text-decoration: none;
+				position: relative;
+				text-align: center;
+				width: 20%;
+				overflow: hidden;
+				line-height:40px;
+			}
+			ul.navig li a{
+				display: inline-block;
+				text-decoration: none;
+				color: #779ba4;
+			}
+			ul.navig li :hover{
+				color: #03a9d1;
+				width: 100%;
+			}
+			#bio{
+				max-width: 1000px;
+				margin-top: 80px;
+			}
+			#photobio{
+				width: 200px;
+				height: 240px;
+				float: left;
+				margin-left: 65px;
+			}
+			#photobio2{
+				width: 340px;
+				height: 240px;
+				float: right;
+				margin-right: 65px;
+			}
+			#photobio img,
+			#photobio2 img{
+				height: 80%;
+				margin: 0 auto;
+			}
+			h2{
+				-webkit-margin-before: 0.3em;
+				-webkit-margin-after: 0.3em;
+			}
+			#textebio{
+			    border-top: 3px solid #03a9d1;
+				color: #0071b7;
+				text-align: justify;
+				float: right;
+				margin-right: 65px;
+			}
+			.corps{
+				border-left: 3px solid #03a9d1;
+				border-right: 3px solid #03a9d1;
+				max-width: 1000px;
+				margin: auto;
+				position: relative;
+			}
+			#photo{
+				clear: both;
+				padding: 20px 0;
+				overflow: auto;	
+			}
+			ul.photo{
+				margin-bottom: 30px;
+				list-style-type: none;			
+				-webkit-padding-start: 0px;
+			}
+			ul.photo li{
+				float: left;
+				margin: 1%;
+				width: 23%;
+				background-size: cover;
+				overflow: hidden;
+				height: 129px;
+				<!--background-color: #32444a;-->
+			}
+			ul.photo li a{
+				display: block;
+				width: 100%;
+				height: 100%;
+			}	
+			ul.photo li img{
+				overflow: hidden;
+				display: block;
+				width: 100%;
+				margin: auto;
+			}
+			#footer{
+				width: 100%;
+				height: 100px;
+			}
+			#itemsContainer {
+				margin: auto;
+				margin-left: 20px;
+				margin-top: 30px;
+				height: 40px;
+				position: absolute;
+			}
+
+			#item{
+				height: 40px;
+				display: inline-block;
+			}
+
+			#item img{
+				overflow: hidden;
+				width: 40px;
+				height: 40px;
+			}
+
+			#line{
+				width: 100%;
+				margin-top: 10px;
+				position: absolute;
+				border-bottom: 1px solid rgb(3, 169, 209);
+			}
+			
+#CV{
+	clear: both;
+    padding: 10px 0;
+    overflow: auto;
+	color: #006bb4;
+	background-color: white;
+	text-align: left;
+	max-width: 1000px;
+    margin-top: 20px;
+}
+#linePro{
+	float: left;
+	vertical-align: middle;
+	margin: 15px 50px;
+}
+
+#linePro img{
+	width: 40px;
+	float: left;
+}
+
+#myProgress {
+	position: relative;
+    width: 850px;
+    height: 40px;
+    background-color: #ddd;
+    float: right;
+	margin-left: 10px;
+}
+
+#myProgress2 {
+	position: relative;
+    width: 100%;
+    height: 40px;
+    background-color: #ddd;
+    float: right;
+	margin-left: 10px;
+}
+
+#myProgress .pourcent{
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+#myBar {
+	position: absolute;
+	height: 100%;
+	color: white;
+	text-align: center;
+}
+
+.adobe1{
+	background-color: #7fbbf9;
+	width: 80%;
+}
+.adobe2{
+	background-color: #fbc45d;
+	width: 80%;
+}
+.adobe3{
+	background-color: #cd99fe;
+	width: 55%;
+}
+.adobe4{
+	background-color: #e955ab;
+	width: 75%;
+}
+.adobe5{
+	background-color: #F00;
+	width: 10%;
+}
+.adobe6{
+	background-color: #95ee0a;
+	width: 45%;
+}
+
+#design{
+float: left;
+width:40%;
+margin: auto;
+padding: 0 10px;
+}
+#modelisation{
+float: right;
+width:40%;
+margin: auto;
+padding: 0 10px;
+}
+
+.app1{
+width: 100%;
+background-color: #0000ff;
+}
+.app2{
+width: 80%;
+background-color: #0090ff;
+}
+.app3{
+width: 35%;
+background-color: #2676ae;
+}
+.app4{
+width: 15%;
+background-color: #0091c8;
+}
+.app5{
+color: #0000ff;
+}
+.app6{
+color: #0090ff;
+}
+.app7{
+color: #2676ae;
+}
+.app8{
+color: #0091c8;
+}
+
+.mode1{
+width: 100%;
+background-color: #ff0000;
+}
+.mode2{
+width: 75%;
+background-color: #7c0000;
+}
+.mode3{
+width: 65%;
+background-color: #ff4400;
+}
+.mode4{
+width: 20%;
+background-color: #ffcc00;
+}
+.mode5{
+color: #ff0000;
+}
+.mode6{
+color: #7c0000;
+}
+.mode7{
+color: #ff4400;
+}
+.mode8{
+color: #ffcc00;
+}
+		
+	/* FLUIDE TABLET */
+
+			@media screen and (max-width: 999px){
+				#photobio{
+					width: 34%; /* 340/1000 */
+					margin-left: 6.5%; /* 65/1000 */
+				}
+				#textebio{
+					width: 51%; /* 510/1000 */
+					margin-right: 6.5%; /* 65/1000 */
+				}
+			}
+
+	/* FLUIDE SMARTPHONE */
+
+			@media screen and (max-width: 480px){
+				nav{
+					background: none;
+					background-image: url("images/menu-button-icon.png");
+					background-repeat: no-repeat;
+					background-position: center;
+					width: 100px;
+					height: 100px;
+					position: absolute;
+					text-align: right;
+					float: right;
+					top: 20px;
+					left: 60%;
+				}
+				ul.navig{
+					color: #779ba4;
+					margin-top:100px;
+					overflow: hidden;
+					height: 0px;
+				}
+				ul.navig li{
+					width: 100px;
+					overflow: hidden;
+				background-color: white;
+				text-align: right;
+				}
+				ul.navig li :hover{
+					background-color: darkgrey;
+					color: white;
+				}
+				ul.navig li a{
+				display: inline-block;
+				text-decoration: none;
+				color: #779ba4;
+				z-index: -5;
+				}
+				#bio{
+					margin-top: 30px;
+				}
+			}
+		</style>
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript">
+			var headerOpened=false;
+
+			function headerOpen() {
+				if (headerOpened) {
+					$('.navig').stop().animate({height:'0px'},{duration:500});
+					headerOpened=false;
+				}
+				else {
+					$('.navig').stop().animate({height:'220px'},{duration:500});
+					headerOpened=true;
+				}
+			}
+		</script>
+	<body>
+		<header>
+			<div class="container">
+				<div id="logo"><img src="images/Logo2.png"/></div>
+				<nav  onClick="headerOpen();">
+					<ul id="menu-deroulant" class="navig">
+						<li><a href="index.html">ACCUEIL</a></li>
+						<li><a href="portfolio_Navez.html">PORTFOLIO</a></li>
+						<li><a href="propos.html">À PROPOS</a></li>
+						<li><a href="contact.html">CONTACT</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		
+		<div class="corps">
+			<section id="bio">
+				<div id="textebio">
+				<h2>Alexandre Navez, Infographiste 2D/3D</h2>
+				<h3>Formation<h3>
+					<h4>2009-2012: Technicien en Infographie - Institut Provincial Charles Deliège 7130 Binche</h4>
+					<h4>2012-2016: Bachelier en Techniques Graphiques - HEH Campus Technique 7000 Mons</h4>
+					<h3>Langues<h3>
+					<h4>Anglais, Français, Néerlandais</h4>
+				</div>
+				<div id="photobio"><img src="images/Photo_Pro.jpg"/></div>
+			</section>
+			
+			<section id="CV">
+				<div id="programmes">
+				
+					<div id="linePro"><img src="images/Adobe1.jpg"/><div id="myProgress"><div id="myBar" class="adobe1"><div class="pourcent">80%</div></div></div></div>
+					<div id="linePro"><img src="images/Adobe2.jpg"/><div id="myProgress"><div id="myBar" class="adobe2"><div class="pourcent">80%</div></div></div></div>
+					<div id="linePro"><img src="images/Adobe5.jpg"/><div id="myProgress"><div id="myBar" class="adobe3"><div class="pourcent">55%</div></div></div></div>
+					<div id="linePro"><img src="images/Adobe3.jpg"/><div id="myProgress"><div id="myBar" class="adobe4"><div class="pourcent">75%</div></div></div></div>
+					<div id="linePro"><img src="images/Adobe4.jpg"/><div id="myProgress"><div id="myBar" class="adobe5"><div class="pourcent">10%</div></div></div></div>
+					<div id="linePro"><img src="images/Adobe6.jpg"/><div id="myProgress"><div id="myBar" class="adobe6"><div class="pourcent">45%</div></div></div></div>
+				
+				</div>
+			</section>
+			
+			<section id="CV">
+				<div id="design">
+				<h2>Design Graphique</h2>
+				<h3 class="app8">15% Identité Visuel</h3>
+				<h3 class="app7">20% Retouche Photo</h3>
+				<h3 class="app6">45% Illustration</h3>
+				<h3 class="app5">20% Flyers/Affiches</h3>
+				
+					<div id="myProgress2">
+						<div id="myBar" class="app1"></div>
+						<div id="myBar" class="app2"></div>
+						<div id="myBar" class="app3"></div>
+						<div id="myBar" class="app4"></div>
+					</div>
+				</div>
+				
+				<div id="modelisation">
+				<h2>Modélisation 3D</h2>
+				<h3 class="mode8">20% Autodesk</h3>
+				<h3 class="mode7">45% Maya</h3>
+				<h3 class="mode6">10% Rhinoceros</h3>
+				<h3 class="mode5">25% SolidWorks</h3>
+				
+					<div id="myProgress2">
+						<div id="myBar" class="mode1"></div>
+						<div id="myBar" class="mode2"></div>
+						<div id="myBar" class="mode3"></div>
+						<div id="myBar" class="mode4"></div>
+					</div>
+				</div>
+			</section>
+			
+			<div id="itemsContainer">
+				<div id="item">
+					<a href="http://www.facebook.com/">
+						<img src="images/facebook.png"/>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div id="line"></div>
+			
+		</div>
+	</body>
+</html>

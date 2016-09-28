@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Portfolio</title>
+		<meta name="vieuwport" content="initial-scale=1.0, width=device-width">
+	</head>
+		<style type="text/css">
+			body{
+				width: 100%;
+				background-color: #FFF;
+				background-position: center;
+				margin: 0;
+				text-align: center;
+			}
+			
+			
+			ul{
+				-webkit-padding-start: 0px;
+				-webkit-margin-before: 0px;
+				-webkit-margin-after: 0px;
+			}
+			header{
+				height: 300px;
+				margin: 0;	
+			}
+			#logo{
+				position: absolute;
+				top: 20px;
+				left: 0;
+			}
+			#logo img{
+				width: 30%;
+			}
+			.container {
+				max-width: 1000px;
+				margin: auto;
+				position: relative;
+			}
+			nav{
+				width: 100%;
+				height: 40px;
+				position: absolute;
+				top: 300px;
+				left: 0;
+			}
+			ul.navig{
+				text-decoration: none;
+				list-style-type: none;
+				color: #03a9d1;
+				font-size: 1.2em;
+				margin: 0;
+			}
+			ul.navig li{
+				display: inline-block;
+				text-decoration: none;
+				position: relative;
+				text-align: center;
+				width: 20%;
+				overflow: hidden;
+				line-height:40px;
+			}
+			ul.navig li a{
+				display: inline-block;
+				text-decoration: none;
+				color: #779ba4;
+			}
+			ul.navig li :hover{
+				color: #03a9d1;
+				width: 100%;
+			}
+			#bio{
+				max-width: 1000px;
+				margin-top: 80px;
+			}
+			#photobio{
+				width: 340px;
+				height: 240px;
+				float: left;
+				margin-left: 65px;
+			}
+			#photobio2{
+				width: 340px;
+				height: 240px;
+				float: right;
+				margin-right: 65px;
+			}
+			#photobio img,
+			#photobio2 img{
+				height: 80%;
+				margin: 0 auto;
+			}
+			h2{
+				-webkit-margin-before: 0.3em;
+				-webkit-margin-after: 0.3em;
+				color: #006bb4;
+			}
+			#textebio{
+			    border-top: 3px solid #03a9d1;
+				color: #0071b7;
+				text-align: justify;
+				width: 510px;
+				height: 140px;
+				float: right;
+				margin-right: 65px;
+			}
+			.corps{
+				border-left: 3px solid #03a9d1;
+				border-right: 3px solid #03a9d1;
+				max-width: 1000px;
+				margin: auto;
+				position: relative;
+			}
+			#photo{
+				clear: both;
+				padding: 20px 0;
+				overflow: auto;	
+			}
+			ul.photo{
+				margin-bottom: 30px;
+				list-style-type: none;			
+				-webkit-padding-start: 0px;
+			}
+			ul.photo li{
+				float: left;
+				margin: 1%;
+				width: 23%;
+				background-size: cover;
+				overflow: hidden;
+				height: 129px;
+				<!--background-color: #32444a;-->
+			}
+			ul.photo li a{
+				display: block;
+				width: 100%;
+				height: 100%;
+			}	
+			ul.photo li img{
+				overflow: hidden;
+				display: block;
+				width: 100%;
+				margin: auto;
+			}
+			#footer{
+				width: 100%;
+				height: 100px;
+			}
+			#itemsContainer {
+				margin: auto;
+				margin-left: 20px;
+				margin-top: 30px;
+				height: 40px;
+				position: absolute;
+			}
+
+			#item{
+				height: 40px;
+				display: inline-block;
+			}
+
+			#item img{
+				overflow: hidden;
+				width: 40px;
+				height: 40px;
+			}
+
+			#line{
+				width: 100%;
+				margin-top: 10px;
+				position: absolute;
+				border-bottom: 1px solid rgb(3, 169, 209);
+			}
+		
+	/* FLUIDE TABLET */
+
+			@media screen and (max-width: 999px){
+				#logo{
+					margin-left: 6.5%;
+				}
+				#photobio{
+					width: 34%; /* 340/1000 */
+					margin-left: 6.5%; /* 65/1000 */
+				}
+				#textebio{
+					width: 51%; /* 510/1000 */
+					margin-right: 6.5%; /* 65/1000 */
+				}
+				#photobio img{
+					height: auto;
+					max-width: 240px;
+					width: 100%;
+					margin: auto;
+				}
+				ul.photo{
+					margin: 0 1%;
+				}
+				ul.photo li{
+					margin: 1%;
+					width: 31.33333333%;
+				}
+			}
+
+	/* FLUIDE SMARTPHONE */
+
+			@media screen and (max-width: 480px){
+				#logo{
+					height: 120px;
+				}
+				ul.photo{
+					margin: 0 1%;
+				}
+				ul.photo li{
+					margin: 1%;
+					width: 98%;
+				}
+				nav{
+					background: none;
+					background-image: url("images/menu-button-icon.png");
+					background-repeat: no-repeat;
+					background-position: center;
+					width: 100px;
+					height: 100px;
+					position: absolute;
+					text-align: right;
+					float: right;
+					top: 20px;
+					left: 60%;
+				}
+				ul.navig{
+					color: #779ba4;
+					margin-top:100px;
+					overflow: hidden;
+					height: 0px;
+				}
+				ul.navig li{
+					width: 100px;
+					overflow: hidden;
+				background-color: white;
+				text-align: right;
+				}
+				ul.navig li :hover{
+					background-color: darkgrey;
+					color: white;
+				}
+				ul.navig li a{
+				display: inline-block;
+				text-decoration: none;
+				color: #779ba4;
+				z-index: -5;
+				}
+				#bio{
+					margin-top: 30px;
+				}
+				ul.photo li img{
+					overflow: hidden;
+					max-width: 275px;
+					width: 100%;
+					height: auto;
+					margin: auto;
+				}
+			}
+		</style>
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript">
+			var headerOpened=false;
+
+			function headerOpen() {
+				if (headerOpened) {
+					$('.navig').stop().animate({height:'0px'},{duration:500});
+					headerOpened=false;
+				}
+				else {
+					$('.navig').stop().animate({height:'220px'},{duration:500});
+					headerOpened=true;
+				}
+			}
+		</script>
+	<body>
+		<header>
+			<div class="container">
+				<div id="logo"><img src="images/Logo2.png"/></div>
+				<nav  onClick="headerOpen();">
+					<ul id="menu-deroulant" class="navig">
+						<li><a href="index.html">ACCUEIL</a></li>
+						<li><a href="portfolio_Navez.html">PORTFOLIO</a></li>
+						<li><a href="propos.html">À PROPOS</a></li>
+						<li><a href="contact.html">CONTACT</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		
+		<div class="corps">
+		<section id="bio">
+		<h2>2D</h2>
+		</section>
+			<section id="photo">
+				<ul class="photo">
+					<li><a href="images/3_4_D.jpg"><img src="images/3_4_D.jpg" title="Post Production"/></a></li>
+					<li><a href="images/castle.jpg"><img src="images/castle.jpg" title="Photoshop"/></a></li>
+					<li><a href="images/Affiche_Batman02.jpg"><img src="images/Affiche_Batman02.jpg" title="Affiche Minimaliste"/></a></li>
+					<li><a href="images/Affiche_Malaga01.jpg"><img src="images/Affiche_Malaga01.jpg" title="Malaga Extreme"/></a></li>
+					<li><a href="images/Affiche_PARIS_CLIMAT.jpg"><img src="images/Affiche_PARIS_CLIMAT.jpg" title="Paris Climat 2015"/></a></li>
+					<li><a href="images/Kalio.jpg"><img src="images/Kalio.jpg" title="Kaléidoscope"/></a></li>
+					<li><a href="images/accueil_site.jpg"><img src="images/accueil_site.jpg" title="Site Web"/></a></li>
+					<li><a href="images/VintageCar.jpg"><img src="images/VintageCar.jpg" title="Voiture Vintage"/></a></li>
+				</ul>
+			</section>
+			
+			<section id="bio">
+			<h2>3D</h2>
+			</section>
+				<section id="photo">
+					<ul class="photo">
+						<li><a href="images/Hotel_Droite01.jpg"><img src="images/Hotel_Droite01.jpg" title="Ath - Hôtel de ville"/></a></li>
+						<li><a href="images/Halle.jpg"><img src="images/Halle.jpg" title="Ath - La Halle"/></a></li>
+						<li><a href="images/Montre.jpg"><img src="images/Montre.jpg" title="Keyshot"/></a></li>
+						<li><a href="images/Quadri.jpg"><img src="images/Quadri.jpg" title="Modélisation Maya"/></a></li>
+						<li><a href="images/AnimationSteampunk.jpg"><img src="images/AnimationSteampunk.jpg" title="Bâteau Steampunk"/></a></li>
+						<li><a href="images/Xbox_03.40.png"><img src="images/Xbox_03.40.png" title="XBox"/></a></li>
+					</ul>
+				</section>
+				
+			<section id="bio">
+			<h2>Vidéos</h2>
+			</section>
+				<section id="photo">
+					<video width="400" height="222" controls="controls"><source src="videos/Demoreel_Alex.mp4" type="video/mp4" /></video>
+					<video width="400" height="222" controls="controls"><source src="videos/Hotel.mp4" type="video/mp4" /></video>
+					<video width="400" height="222" controls="controls"><source src="videos/Navez.Alexandre_Steampunk.mp4" type="video/mp4" /></video>
+					<video width="400" height="222" controls="controls"><source src="videos/Navez.alexandre_neon.mp4" type="video/mp4" /></video>
+				</section>
+			
+			<div id="itemsContainer">
+				<div id="item">
+					<a href="http://www.facebook.com/">
+						<img src="images/facebook.png"/>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div id="line"></div>
+			
+		</div>
+	</body>
+</html>
